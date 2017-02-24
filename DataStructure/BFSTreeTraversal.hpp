@@ -6,9 +6,20 @@
 //  Copyright © 2017 Elangbam, Johnson (J.). All rights reserved.
 //
 
-#ifndef BFSTreeTraversal_hpp
-#define BFSTreeTraversal_hpp
+
 
 #include <stdio.h>
+#include <stdlib.h>
 
-#endif /* BFSTreeTraversal_hpp */
+typedef struct BTreeNode {
+    int data;
+    struct BTreeNode *left;
+    struct BTreeNode *right;
+} BTreeNode;
+
+void BFSTraversal(BTreeNode *root);
+BTreeNode *getNode(int data);
+BTreeNode *insertBTree(BTreeNode *root, int data);
+int searchBTree(BTreeNode *root, int data);
+
+

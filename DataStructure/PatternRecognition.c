@@ -8,34 +8,77 @@
 
 #include "PatternRecognition.h"
 
-int match(char *a, char *b)
-{
-//    int c;
+
+
+
+
+int match(char *string, char *pattern){
     int position = 0;
-    char *x, *y;
+    char *a;
+    char *b;
     
-    x = a;
-    y = b;
+    a = string;
+    b = pattern;
     
-    while(*a)
-    {
-        while(*x==*y)
-        {
-            x++;
-            y++;
-            if(*x=='\0'||*y=='\0')
+    while (*string) {
+        while (*a == *b) {
+            a++;
+            b++;
+            if (*a == '\0' || *b == '\0')
                 break;
+            
+            
         }
-        if(*y=='\0')
+        
+        if (*b == '\0')
             break;
         
-        a++;
+        string++;
+        a = string;
+        b = pattern;
+        
         position++;
-        x = a;
-        y = b;
+        
     }
-    if(*a)
+    
+    if (*string) {
         return position;
-    else   
-        return -1;   
+    }
+    else
+        return -1;
 }
+
+
+
+
+//int match(char *string, char *pattern)
+//{
+////    int c;
+//    int position = 0;
+//    char *x, *y;
+//    
+//    x = string;
+//    y = pattern;
+//    
+//    while(*string)
+//    {
+//        while(*x==*y)
+//        {
+//            x++;
+//            y++;
+//            if(*x=='\0'||*y=='\0')
+//                break;
+//        }
+//        if(*y=='\0')
+//            break;
+//        
+//        string++;
+//        position++;
+//        x = string;
+//        y = pattern;
+//    }
+//    if(*string)
+//        return position;
+//    else   
+//        return -1;   
+//}

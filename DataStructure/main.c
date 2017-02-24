@@ -14,6 +14,7 @@
 #include "Tree.h"
 #include "InterviewProblems.h"
 #include "PatternRecognition.h"
+#include "BFSTreeTraversal.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -174,16 +175,30 @@ int main(int argc, const char * argv[]) {
 //    printf("Enter a string to find\n");
 //    gets(b);
 
-    char *a = "tuna tuna";
-    char *b = "tuna";
+    char *string = "lazy dog";
+    char *pattern = "dog";
     
-    int position = match(a, b);
+    int position = match(string, pattern);
     
     if(position!=-1)
         printf("Found at location %d\n", position+1);
     else
         printf("Not found.\n");
- 
+
+//    BTreeNode *root = NULL;
+//
+//    root = insertBTree(root, 10);
+//    root = insertBTree(root, 45);
+//    root = insertBTree(root, 55);
+//    root = insertBTree(root, 40);
+//    root = insertBTree(root, 47);
+//    root = insertBTree(root, 53);
+//    root = insertBTree(root, 57);
+//    
+//    
+//    BFSTraversal(root);
+
+    
     
     
     
