@@ -16,6 +16,7 @@
 		39B6C1E41E57992500D3B234 /* InterviewProblems.c in Sources */ = {isa = PBXBuildFile; fileRef = 39B6C1E21E57992500D3B234 /* InterviewProblems.c */; };
 		39B6C1E71E57AC8300D3B234 /* PatternRecognition.c in Sources */ = {isa = PBXBuildFile; fileRef = 39B6C1E51E57AC8300D3B234 /* PatternRecognition.c */; };
 		39B6C2141E5F970400D3B234 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 39B6C2121E5F970400D3B234 /* Queue.c */; };
+		39B6C2171E5FBB6200D3B234 /* BFSTreeTraversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39B6C2151E5FBB6200D3B234 /* BFSTreeTraversal.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		39B6C1E61E57AC8300D3B234 /* PatternRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternRecognition.h; sourceTree = "<group>"; };
 		39B6C2121E5F970400D3B234 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
 		39B6C2131E5F970400D3B234 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		39B6C2151E5FBB6200D3B234 /* BFSTreeTraversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BFSTreeTraversal.cpp; sourceTree = "<group>"; };
+		39B6C2161E5FBB6200D3B234 /* BFSTreeTraversal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BFSTreeTraversal.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				39B6C1BB1E52545100D3B234 /* LinkedList.h */,
 				39B6C1DF1E575F3A00D3B234 /* Tree.c */,
 				39B6C1E01E575F3A00D3B234 /* Tree.h */,
+				39B6C2151E5FBB6200D3B234 /* BFSTreeTraversal.cpp */,
+				39B6C2161E5FBB6200D3B234 /* BFSTreeTraversal.hpp */,
 				39B6C1E21E57992500D3B234 /* InterviewProblems.c */,
 				39B6C1E31E57992500D3B234 /* InterviewProblems.h */,
 				39B6C1E51E57AC8300D3B234 /* PatternRecognition.c */,
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B6C2171E5FBB6200D3B234 /* BFSTreeTraversal.cpp in Sources */,
 				39B6C2141E5F970400D3B234 /* Queue.c in Sources */,
 				3961B8A61E4E54A900B427F6 /* Sorting.c in Sources */,
 				3961B8A01E4E1FC500B427F6 /* Stacks.c in Sources */,
